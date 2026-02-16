@@ -5,8 +5,8 @@ on:
     branches: [main]
 
 jobs:
-  Deploy:
-    name: Tests
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -19,4 +19,4 @@ jobs:
           go-version: "1.25.1"
 
       - name: Build app
-        run: docker build -t pakasfand/notely:latest .
+        run: ./scripts/buildprod.sh
