@@ -16,6 +16,6 @@ type User struct {
 	ID        string
 	CreatedAt string
 	UpdatedAt string
-	Name   string
-	ApiKey string // #nosec G117 -- field intentionally named to match database schema
+	Name      string
+	ApiKey    string // #nosec G117 -- field intentionally named to match database schema
 }
